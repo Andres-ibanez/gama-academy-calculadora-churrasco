@@ -16,59 +16,72 @@
       </header>
   
       <div class="row">
-        <div class="col-sm">
-          <p>Comidas</p>
+        <div class="col-3">
+          <p class="text">Comidas</p>
         </div>
-        <div class="col-sm">
+        <div class="col-3">
           <input id="mulheres-qnt" type="text" />
           <label for="mulheres-qnt">Mulheres</label>
         </div>
-        <div class="col-sm">
+        <div class="col-3">
           <input id="homens-qnt" type="text" />
           <label for="homens-qnt">Homens</label>
         </div>
-        <div class="col-sm">
+        <div class="col-3">
           <input id="criancas-qnt" type="text" />
           <label for="criancas-qnt">Crianças</label>
         </div>
       </div>
       <div class="row">
-        <label for="acompanhamentos">acompanhamentos</label>
-        <input id="acompanhamentos" type="checkbox" />
+        <div class="col-3"></div>
+        <div class="col-3 check">
+          <input id="acompanhamentos" type="checkbox" />
+          <label for="acompanhamentos">Acompanhamentos</label>
+        </div>
       </div>
       <div class="row">
-        <div class="col-sm">
-          <p>Bebidas</p>
+        <div class="col-3">
+          <p class="text">Bebidas</p>
         </div>
-        <div class="col-sm">
-          <input id="bebidas-nao-alcoolicas" type="text" />
-          <label for="bebidas-nao-alcoolicas">Quantos bebem cerveja?</label>
+        <div class="col-3">
+          <input id="bebidas-alcoolicas" type="text" />
+          <label for="bebidas-alcoolicas">Quantos bebem cerveja?</label>
         </div>
-        <div class="col-sm">
+        <div class="col-3">
           <input id="bebidas-nao-alcoolicas" type="text" />
           <label for="bebidas-nao-alcoolicas">Quantos bebem refrigerante?</label>
         </div>
+        <div class="col-3"></div>
       </div>
   
-      <button class="btn" id="botaoCalcular">Calcular</button>
+      <button class="btn btn-lg" id="botaoCalcular">Calcular</button>
   
         <div class="container results">
           <div class="row">
-            <p>Total de Pessoas </p>
-            <label for="total-pessoas" id="total-pessoas"></label>
-          </div>
-          <div class="row">
-            <p>Total de Carne </p>
-            <label for="total-carne" id="total-carne"></label>
-          </div>
-          <div>
-            <label for="total-acompanhamento" id="total-acompanhamento"></label>
-          </div>
-          <div>
-            <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
-          </div>
-          <div>
-            <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+            <div class="col-6">
+              <div class="row">
+                <p>Total de Pessoas: </p>
+                <label for="total-pessoas" id="total-pessoas"></label>
+              </div>
+              <div class="row">
+                <p>Total de Carne:</p>
+                <label for="total-carne" id="total-carne"></label>
+              </div>
+              <div class="row">
+                <p>Acompanhamentos: </p>
+                <label for="total-acompanhamento" id="total-acompanhamento"></label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <p>Bebidas Alcoólicas: </p>
+                <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+              </div>
+              <div class="row">
+                <p>Bebidas não Alcoólicas: </p>
+                <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+              </div>
+            </div>
           </div>
           <div>
         </div>

@@ -1,6 +1,72 @@
-body{
-    background-color: #731AB7;
-    color: white;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap');
+:root{
+    --primary-color: #731AB7;
 }
 
+body{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-family: Lato;
+}
+
+h2 {
+    margin-bottom: 3rem;
+    font-size: 40px;
+}
+
+h2, .text {
+    font-family: Lobster;
+}
+
+.text {
+    font-size: 20px;
+}
+
+input{
+    border: 5px solid #F7F7F7;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+input[type="text"]{
+    height: 4rem;
+}
+
+input[type="checkbox"]{
+    /* height: 4rem; */
+}
+
+label {
+    font-size: 15px;
+}
+.main-container{
+    background-color: rgba(0,0,0, 0.19);
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    /* opacity: 0.19; */
+    padding: 10vh;
+
+}
+
+.check{
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color: #63DC3E;
+    color: var(--primary-color);
+    margin: 50px 0;
+    font-weight: bold;
+}
+
+.results{
+    background-color: #898989;
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+.results label{
+    margin-left: 5px;
+}
