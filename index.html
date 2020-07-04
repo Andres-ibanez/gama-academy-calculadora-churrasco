@@ -3,57 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./src/main.css" />
     <title>Gama Academy - Calculadora de churrasco</title>
   </head>
-  <body>
-    <header>
-      <h5>GAMA ACADEMY</h5>
-      <h2>Calculadora de Churrasco</h2>
-    </header>
+  <body class="container-fluid">
+    <div class="container container-fluid main-container">
 
-    <div>
-      <label for="mulheres-qnt">Mulheres</label>
-      <input id="mulheres-qnt" type="text" />
-
-      <label for="homens-qnt">Homens</label>
-      <input id="homens-qnt" type="text" />
-
-      <label for="criancas-qnt">Crianças</label>
-      <input id="criancas-qnt" type="text" />
-      <br>
-      <label for="acompanhamentos">acompanhamentos</label>
-      <input id="acompanhamentos" type="checkbox" />
-    </div>
-    <div>
-      <label for="bebidas-alcoolicas">Bebidas alcoolicas</label>
-      <input id="bebidas-alcoolicas" type="text" />
-
-      <label for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
-      <input id="bebidas-nao-alcoolicas" type="text" />
-    </div>
-    <br>
-    <button id="botaoCalcular">Calcular</button>
-
-      <div>
-        <div>
-          <label for="total-carne" id="total-carne"></label>
+      <header>
+        <h5>GAMA ACADEMY</h5>
+        <h2>Calculadora de Churrasco</h2>
+      </header>
+  
+      <div class="row">
+        <div class="col-sm">
+          <p>Comidas</p>
         </div>
-        <div>
-          <label for="total-pessoas" id="total-pessoas"></label>
+        <div class="col-sm">
+          <input id="mulheres-qnt" type="text" />
+          <label for="mulheres-qnt">Mulheres</label>
         </div>
-        <div>
-          <label for="total-acompanhamento" id="total-acompanhamento"></label>
+        <div class="col-sm">
+          <input id="homens-qnt" type="text" />
+          <label for="homens-qnt">Homens</label>
         </div>
-        <div>
-          <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+        <div class="col-sm">
+          <input id="criancas-qnt" type="text" />
+          <label for="criancas-qnt">Crianças</label>
         </div>
-        <div>
-          <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+      </div>
+      <div class="row">
+        <label for="acompanhamentos">acompanhamentos</label>
+        <input id="acompanhamentos" type="checkbox" />
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <p>Bebidas</p>
         </div>
-        <div>
+        <div class="col-sm">
+          <input id="bebidas-nao-alcoolicas" type="text" />
+          <label for="bebidas-nao-alcoolicas">Quantos bebem cerveja?</label>
+        </div>
+        <div class="col-sm">
+          <input id="bebidas-nao-alcoolicas" type="text" />
+          <label for="bebidas-nao-alcoolicas">Quantos bebem refrigerante?</label>
+        </div>
+      </div>
+  
+      <button class="btn" id="botaoCalcular">Calcular</button>
+  
+        <div class="container results">
+          <div class="row">
+            <p>Total de Pessoas </p>
+            <label for="total-pessoas" id="total-pessoas"></label>
+          </div>
+          <div class="row">
+            <p>Total de Carne </p>
+            <label for="total-carne" id="total-carne"></label>
+          </div>
+          <div>
+            <label for="total-acompanhamento" id="total-acompanhamento"></label>
+          </div>
+          <div>
+            <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+          </div>
+          <div>
+            <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+          </div>
+          <div>
+        </div>
       </div>
     </div>
     <script src="./src/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
